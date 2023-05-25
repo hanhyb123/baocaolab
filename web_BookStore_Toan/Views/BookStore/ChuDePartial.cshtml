@@ -1,0 +1,21 @@
+﻿
+@model IEnumerable<web_BookStore_Toan.Models.CHUDE>
+
+
+@{
+    foreach (var item in Model)
+    {
+
+
+        <a href="@Url.Action("SPTheochude", "BookStore", new { mMacd = item.MaCD })">
+            <option>
+                @item.TenChuDe
+            </option>
+        </a>
+
+
+
+
+
+    }
+}

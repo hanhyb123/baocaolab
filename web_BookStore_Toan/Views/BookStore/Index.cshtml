@@ -1,0 +1,26 @@
+﻿@using web_BookStore_Toan.Models
+@model List<SACH>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<section class="latest-product pt-70 pb-70">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="section-headding-1 mb-50">
+                    <h2><span>Sản Phẩm mới nhất</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="latest-product-full owl-carousel">
+                    @Html.Action("Sachmoi", "BookStore")
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+﻿@using web_BookStore_Toan.Models;
+@model List<NHAXUATBAN>
+
+
+
+@{foreach (var item in Model)
+    {
+
+        <a href="@Url.Action("SPTheoNxb", "BookStore", new {NXB=item.MaNXB})">
+            <li>
+
+                @item.TenNXB
+
+
+            </li>
+        </a>
+
+
+
+
+    }
+}
+
+
